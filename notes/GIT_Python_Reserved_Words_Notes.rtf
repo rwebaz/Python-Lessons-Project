@@ -1,0 +1,569 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red0\green0\blue255;
+}
+{\*\expandedcolortbl;\csgray\c100000;\csgray\c0;\csgray\c100000;\csgenericrgb\c0\c0\c100000;
+}
+{\info
+{\author Robert Weber}
+{\*\company BS - Bus Admin, MBA; MISM, EJD, Director}
+{\*\copyright Copyright 2016. All rights reserved.}}\margl1440\margr1440\vieww9460\viewh14760\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 GIT | Python  | Reserved Keywords | Notes\
+====================== \
+\
+Python \
+\
+======================
+\b0 \
+\
+
+\b Reserved Keywords
+\b0 \
+\
+
+\b ======================
+\b0 \
+\
+
+\b and\
+\
+======================\
+\
+as\
+\
+======================\
+\
+assert
+\b0 \
+\
+
+\b ======================\
+\
+break
+\b0 \
+\
+	
+\b Issue
+\b0 . How to "Break Out" of an executing loop?\
+\
+	
+\b Rule
+\b0 . The reserved keyword 
+\b break
+\b0  will allow the program to "Break Out" of an executing loop at the point of the 
+\b break
+\b0  statement.\
+\
+
+\b ======================\
+\
+class\
+\
+	Rule. 
+\b0 You define a class with the 
+\b class
+\b0  keyword.\
+
+\b \
+======================\
+\
+comment\
+
+\b0 \
+	
+\b Issue
+\b0 . How to add a comment line to a Python.py script?\
+\
+	
+\b Rule A
+\b0 . Single line comments are prefixed with a \'93#\'94, as follows:\
+\
+	
+\b Analysis
+\b0 . #This is a comment.\
+\
+	
+\b Rule B
+\b0 . Double line comments are prefixed ( and, ended ) with a set of triple quotes \'93\'94, as follows:\
+	\
+
+\b 	Analysis
+\b0 .\
+	\'93\'94\'94\
+	An example Double line comment embedded within a Python script.\
+\pard\pardeftab720\partightenfactor0
+\cf0 	Note that triple quotes allow multiline strings\
+	\'93\'94\'94\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b \cf0 ======================\
+\
+conditional ( chain )\
+\
+	Rule.
+\b0  When there are more than two possibilities and we need more than two branches where exactly only one branch will be executed. \
+
+\b \
+
+\b0 	
+\b Analysis
+\b0 . Example ...\
+\
+if x < y:\
+    print 'x is less than y'\
+elif x > y:\
+    print 'x is greater than y'\
+else:\
+    print 'x and y are equal\'94\
+\
+
+\b ======================\
+\
+continue
+\b0 \
+\
+	
+\b Rule
+\b0 . Ends current iteration of loop and goes back to the top of the loop.\
+\
+
+\b ======================\
+\
+def
+\b0 \
+\
+	
+\b Rule
+\b0 . Functions are defined with the 
+\b def 
+\b0 keyword and a parenthesis after the function name.\
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b \cf0 ======================
+\b0 \
+\
+
+\b del\
+\
+======================\
+\
+elif\
+\
+======================\
+\
+else\
+\
+======================\
+\
+except\
+\
+======================\
+\
+exec\
+\
+	Rule
+\b0 . Deprecated in Python ver 3.3\
+
+\b \
+======================\
+\
+finally
+\b0 \
+\
+	
+\b Rule
+\b0 . Code that will be executed whether exception occurs or not.\
+\
+
+\b ======================
+\b0 \
+\
+
+\b for\
+\
+======================\
+\
+from\
+\
+======================\
+\
+global\
+\
+======================\
+\
+if\
+\
+======================\
+\
+import\
+\
+======================\
+\
+in
+\b0 \
+\
+
+\b ======================
+\b0 \
+\
+
+\b is\
+\
+======================\
+\
+lambda\
+\
+======================\
+\
+nonlocal\
+\
+======================\
+\
+not
+\b0 \
+\
+
+\b ======================\
+\
+or\
+\
+======================\
+\
+pass\
+\
+======================\
+\
+print (2.7)
+\b0 \
+\
+	
+\b Issue
+\b0 . How to write ( 
+\b print
+\b0  ) a statement on the computer screen in Python 2.7 from the Terminal prompt?\
+\
+	
+\b Rule
+\b0 . Once the Python interpreter has been invoked, type the keyword 
+\b print
+\b0  followed by text encased in single quotes at the [>>> prompt\
+\
+	
+\b Analysis
+\b0 . Where ' xxx ' ( the text between the single quotes ) is then rendered, as follows:\
+\
+	
+\b print
+\b0  'Hey there!' \
+\
+
+\b ======================\
+\
+print (3.3)
+\b0 \
+\
+	
+\b Issue
+\b0 . How to write ( 
+\b print
+\b0  ) a statement on the computer screen in Python 3.3 from the Terminal prompt?\
+\
+	
+\b Rule
+\b0 . Once the Python interpreter has been invoked, type the function 
+\b print()
+\b0  at the [>>> prompt.\
+\
+	
+\b Analysis
+\b0 . Where ' xxx ' ( the text between the single quotes ) is then rendered, as follows:\
+\
+	
+\b print(
+\b0 'Hey there!'
+\b )
+\b0  \
+\
+
+\b ======================\
+\
+python
+\b0 \
+\
+	
+\b Issue
+\b0 . How to start-invoke ( 
+\b python
+\b0  ) the Python interpreter from the Terminal prompt?\
+\
+	
+\b Rule
+\b0 . To start the Python interpreter via Terminal, type 
+\b python
+\b0 \
+\
+	
+\b Analysis
+\b0 . More to come ...\
+\
+
+\b ======================\
+\
+quit()
+\b0 \
+\
+	
+\b Issue
+\b0 . How to exit ( 
+\b quit
+\b0  ) the Python interpreter from the Terminal prompt?\
+\
+	
+\b Rule
+\b0 . To exit the Python interpreter via Terminal, type 
+\b quit() 
+\b0 at the [>>> prompt.\
+\
+	
+\b Analysis
+\b0 . More to come ...\
+\
+
+\b ======================\
+\
+raise\
+\
+======================
+\b0 \
+ \
+
+\b return
+\b0 \
+\
+
+\b ======================
+\b0 \
+\
+
+\b try
+\b0 \
+\
+	
+\b Rule
+\b0 . Begins a block to check for exceptions.\
+\
+
+\b ======================\
+\
+type
+\b0 \
+\
+	
+\b Issue
+\b0 . What type a value has?\
+\
+	
+\b Rule
+\b0 . At the triple chevron ( greater-than prompt, or  ' >>> ' ), ask the Python interpreter for the 'type' of a value, as follows:\
+\
+	
+\b Analysis
+\b0 . 
+\b type
+\b0  ('Hello, World!')\
+\
+	
+\b Conclusion
+\b0 . Returns 
+\f1\fs22 \cf2 \cb3 \CocoaLigature0 <type 'str'>
+\f0\fs24 \cf0 \CocoaLigature1 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b \cf0 ======================
+\b0 \
+\
+
+\b while
+\b0 \
+\
+
+\b ======================\
+\
+with\
+\
+======================
+\b0 \
+\
+
+\b yield\
+\
+======================
+\b0 \
+\
+
+\b Source
+\b0 : \'93Python for Informatics: Exploring Information by Charles Severance.\'94\
+\
+
+\b ======================
+\b0 \
+\
+C=> {\field{\*\fldinst{HYPERLINK "http://docs.python.org/2.7/tutorial/"}}{\fldrslt \cf2 \CocoaLigature0 http://docs.python.org/2.7/tutorial/}}\cf2 \CocoaLigature0 \
+\
+
+\b \cf0 \CocoaLigature1 ======================
+\b0 \
+\
+C=> {\field{\*\fldinst{HYPERLINK "http://www.pythonlearn.com"}}{\fldrslt http://www.pythonlearn.com}}\
+\
+
+\b ======================
+\b0 \
+\
+C=> {\field{\*\fldinst{HYPERLINK "http://www.python.org"}}{\fldrslt http://www.python.org}}\
+\
+
+\b ======================
+\b0 \
+\
+C=> {\field{\*\fldinst{HYPERLINK "http://docs.python.org/2/tutorial/controlflow.html#keyword-arguments"}}{\fldrslt http://docs.python.org/2/tutorial/controlflow.html#keyword-arguments}}\
+\
+
+\b ======================\
+\
+
+\b0 C=> {\field{\*\fldinst{HYPERLINK "http://www.python.org/dev/peps/pep-0008/"}}{\fldrslt http://www.python.org/dev/peps/pep-0008/}}
+\b \
+\
+======================
+\b0 \
+\
+C=> {\field{\*\fldinst{HYPERLINK "http://www.pip-installer.org/en/latest/installing.html"}}{\fldrslt http://www.pip-installer.org/en/latest/installing.html}}\
+\
+
+\b ======================
+\b0 \
+\
+C=> {\field{\*\fldinst{HYPERLINK "http://ipython.org/"}}{\fldrslt http://ipython.org/}}\
+\
+
+\b ======================
+\b0 \
+\
+
+\b Python 3 Documentation
+\b0 \
+\
+C=> {\field{\*\fldinst{HYPERLINK "http://docs.python.org/3/"}}{\fldrslt http://docs.python.org/3/}}\
+\
+
+\b ======================
+\b0 \
+\
+
+\b Python 2 Documentation
+\b0 \
+\
+C=> {\field{\*\fldinst{HYPERLINK "http://docs.python.org/2.7/"}}{\fldrslt http://docs.python.org/2.7/}}\
+\
+
+\b ======================
+\b0 \
+\
+
+\b Official Tutorial
+\b0 \
+\
+C=> {\field{\*\fldinst{HYPERLINK "http://docs.python.org/2/tutorial/"}}{\fldrslt http://docs.python.org/2/tutorial/}}\
+\
+
+\b ======================\
+\
+Python 3.5 Tutorial\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\b0\fs22 \cf2 \cb3 \CocoaLigature0 C=> {\field{\*\fldinst{HYPERLINK "http://docs.python.org/3.5/tutorial/"}}{\fldrslt http://docs.python.org/3.5/tutorial/}}
+\f0\fs24 \cf0 \cb3 \CocoaLigature1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+
+\b Learn Python
+\b0 \
+\
+C=> {\field{\*\fldinst{HYPERLINK "http://www.learnpython.org/"}}{\fldrslt http://www.learnpython.org/}}\
+\
+
+\b ======================
+\b0 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\b \cf0 \cb3 Learn Python the Hard Way
+\b0 \
+\
+C=> \cf4 http://learnpythonthehardway.org/book/\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b \cf0 \cb3 ======================
+\b0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 \cb3 \
+\pard\pardeftab720\partightenfactor0
+
+\b \cf0 Python Anywhere
+\b0 \
+\
+C=> \cf4 https://www.pythonanywhere.com/\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b \cf0 \cb3 ======================
+\b0 \
+\
+
+\b The Zen of Python by Tim Peters
+\b0 \
+\
+Beautiful is better than ugly.\
+Explicit is better than implicit.\
+Simple is better than complex.\
+Complex is better than complicated.\
+Flat is better than nested.\
+Sparse is better than dense.\
+Readability counts.\
+Special cases aren\'92t special enough to break\
+the rules.\
+Although practicality beats purity.\
+Errors should never pass silently.\
+Unless explicitly silenced.\
+In the face of ambiguity, refuse the temptation\
+to guess.\
+There should be one -and preferably only\
+one -obvious way to do it.\
+Although that way may not be obvious at first\
+unless you\'92re Dutch.\
+Now is better than never.\
+Although never is often better than *right* now.\
+If the implementation is hard to explain, it\'92s a bad\
+idea.\
+If the implementation is easy to explain, it may be\
+a good idea.\
+Namespaces are one honking great idea -- let\'92s do\
+more of those!\
+\
+
+\b ======================
+\b0 \
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf2 \cb3 \CocoaLigature0 sudo pip install --upgrade pip
+\f0\fs24 \cf0 \cb3 \CocoaLigature1 \
+}
