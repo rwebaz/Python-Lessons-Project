@@ -3,7 +3,7 @@ title: Home Page
 layout: default
 navigation_weight: 1
 ---
-# Electron Lessons Project Home Page
+# Python Lessons Project Home Page
 
 {{ site.tagline }}
 
@@ -72,4 +72,4 @@ Expound the solution ...
 
 ### External Sources
 
-- The [Project Source Links](https://mminail.github.io/Electron/Source-Electron-Links.htm){:title="Click to Visit the Source Links page of the Electron Lessons Project at GitHub pages"}{:target="_blank"} page of the Electron Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
+- The [Project Source Links](https://mminail.github.io/Python/Source-Python-Links.htm){:title="Click to Visit the Source Links page of the Python Lessons Project at GitHub pages"}{:target="_blank"} page of the Python Lessons Project. Published by © 2017 [Mminail.github.io](https://mminail.github.io/){:title="Click to Visit the Concept Library of the Medical Marijuana Initiative of North America - International Limited, an Arizona Benefit Corporation"}{:target="_blank"}.
