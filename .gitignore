@@ -2,7 +2,7 @@
 # Template Dtd 11-18-19 
 # 
 # See http://help.github.com/ignore-files/ for more about ignoring files
-#
+# 
 # Note. The types and files not commented out on this '.gitignore' sheet will not be pushed to the master. They will be ignored by Git.
 #
 # Note. Ignore Visual Studio temporary files and build results.
