@@ -1,12 +1,12 @@
 ---
-title: Place Title of Page Here
+title: Python Types
 layout: default
 excerpt: Place the introducing line of text ie.) the 'tagline' here ...
 hint: Place the intro paragraph ie.) the 'hypothesis' here ...
-repo: Shell-Lessons-Project
+repo: Python-Lessons-Project
 ver_date: 11-26-19
 navigation_weight: 8
-categories: template
+categories: page
 ---
 {% include toc.md %}
 
@@ -20,7 +20,7 @@ More to come ...
 
 ```html
 <hgroup class='text-left'>
-    <h4>Strict Objects</h4>
+    <h4>Python Types</h4>
 </hgroup>
     <hr class='green-groove' />
 
@@ -31,11 +31,29 @@ More to come ...
 </p>
 
 <pre class='flex-box'>
-<span>Invoke Strict Mode ...</span>
+<span>Code for Python Types ...</span>
+
 {% highlight html linenos %}
-//Strict Objects
-'use strict';
+//Python Types
+# Note. There are Six (6) Python `Built In` IMMUTABLE "Variable Types Functions", or #VTFs as follows:
+
+# int()
+# float()
+# bool()
+# str()
+# tuple()
+# bytes()
+
+# Note. There are Three (3) "plus" Python `Built In` MUTABLE "Variable Types Collections", or #VTCs as follows:
+
+# list
+# set
+# dict
+
+# Note. The "plus" types are delivered by adjacent software and are traditionally mutable.
+
 {% endhighlight %}
+
 <span>Place at the top of program.</span>
 </pre>
 <hr class='green-groove' />
