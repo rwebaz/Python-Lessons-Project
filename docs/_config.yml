@@ -1,6 +1,6 @@
 # Site settings
 #
-# underscore Config dot yaml (_config.yml) template ver 11-11-2019
+# underscore Config dot yaml (_config.yml) template ver 03-31-22
 #
 # Un-comment the theme for the `docs` folder [only] in satellite repos
 theme: "jekyll-theme-cayman"
@@ -30,7 +30,7 @@ author:
     twitter_username: "rwebaz"
 #
 # Set the North American default time zone for the repo
-timezone: "America/Phoenix"
+timezone: "America/Chicago"
 #
 # Exclude the default `README.md` file when rendering Jekyll
 exclude: ['README.md']
@@ -87,9 +87,9 @@ markdown: "kramdown"
 # Set the properties for `Kramdown`
 kramdown:
     input: "GFM"
-    syntax_highlighter: "rouge"
+    syntax_highlighter: rouge
     math_engine: "mathjax"
-    hard_wrap: "false"
+    hard_wrap: false
 #
 # Set the code for `Goodle Analytics`
 # Warning. Property `google_analytics` is not allowed
@@ -133,9 +133,9 @@ defaults:
 excerpt_separator: <!-- this is a literal excerpt separator -->
 collections:
   gists:
-    output: "true"
+    output: true
   collection_CFFP:
-    output: "true"
+    output: true
 defaults:
   - scope:
       path: ""

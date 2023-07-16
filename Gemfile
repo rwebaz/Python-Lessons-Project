@@ -1,11 +1,22 @@
 # 
-# Gemfile ver 122220 Satellite Repo
+# Gemfile ver 071623 Satellite Repo
 # 
 # frozen_string_literal: true
 #
 source "https://rubygems.org"
 #
-ruby "2.7.2"
+# Script by Parker
+# C=> https://byparker.com/blog/2014/stay-up-to-date-with-the-latest-github-pages-gem/
+# require 'json'
+# require 'open-uri'
+# versions = JSON.parse(open('https://pages.github.com/versions.json').read)
+# gem 'github-pages', versions['github-pages']
+# ruby versions["ruby"]
+#
+# ruby "2.7.4"
+# ruby "3.0.1"
+# ruby "3.0.2"
+ruby "3.1.1"
 #
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 #
@@ -37,9 +48,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 #
 # From the global Terminal prompt, run the following command statement:
 #
-# Note. The current version of `Bundler` is: 2.2.2
-#
-# However, the working version for most of the repos here is: 1.16.1
+# Note. The current version of `Bundler` is: 2.4.17
 #
 # gem install bundler
 #
@@ -55,25 +64,28 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 #
 # which bundler
 #
-# The 'Gem Bundler' program will notify you via the Terminal at the next update operation ...
+# Returns; /usr/local/bin/bundler
+#
+# bundler --version
+#
+# Returns: Bundler version 2.4.17
+#
+# The 'Gem Bundler' program will notify you via the Terminal ...
+# at the next update operation ...
 # if an upgrade to your version of the 'Gem Bundler' program is available.
 # 
 # To upgrade your version of the 'Gem Bundler' program ...
 # 
-# Type the following command at a local Terminal prompt,
-#
-# or,
+# Type the following command(s) at a local Terminal prompt, as follows:
 # 
-# gem update bundler: 2.2.2
+# gem update bundler: 2.4.17
+# 
+# Or,
 #
-# or,
+# Type the following command at a global Terminal prompt, as follows:
 #
-# gem install bundler:1.16.1
-#
-# or,
-#
-# # bundle update --bundler
-#
+# bundle update --bundler
+# 
 # It is not necessary to install the 'Gem Bundler' program every time you create a separate repo. 
 #
 # To instantiate an instance of the 'Jekyll server' on your development machine ...
@@ -98,6 +110,12 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 #
 # gem install jekyll
 #
+# Hint: To see where your copy of the Jekyll program resides type:
+#
+# which jekyll
+#
+# /usr/local/bin/jekyll
+#
 # Note. Designating the version of the 'Jekyll server' when installing via Bundle update, or via the initial Bundle install ...
 # 
 # Will not survive the 'Jekyll-docs' installation
@@ -108,9 +126,11 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 # 
 # Then, comment out the following version statement to retain your superior version copy locally
 #
-gem 'jekyll', '3.9.0'
+gem 'jekyll', '3.9.3'
+# gem 'jekyll', '4.2.0'
 #
 # Note. The version of 'Jekyll docs' should match the installed version of 'Jekyll' from above.
+# 
 # In other words, you should install the 'jekyll-docs' gem version = 3.6.2 to use the 'jekyll docs' command
 #
 # However, when attempting ...
@@ -128,7 +148,8 @@ gem 'jekyll', '3.9.0'
 #
 # Then, comment out the following version statement to retain your superior version copy locally
 #
-gem 'jekyll-docs', '3.9.0'
+# gem 'jekyll-docs', '3.9.0'
+# gem 'jekyll-docs', '4.0.0'
 #
 # To run 'Jekyll docs' locally ...
 #
@@ -167,14 +188,25 @@ gem 'jekyll-docs', '3.9.0'
 # bundle update github-pages
 #
 # The 'Gem Bundler' program will then install the 'Jekyll server' version you have indicated.
+# 
+# Optionally, you may run the following command from the Terminal prompt ...
+# to ensure your copy of the 'Jekyll server' is up and running.
 #
-# Optionally, you may run the following command from the Terminal prompt to ensure your copy of the 'Jekyll server' is up and running.
-#
-# bundle exec jekyll serve
+# bundle exec jekyll serve --livereload
 #
 # To start a local 'Jekyll server' instance ...
 #
+# For satellite repos that do use the `docs` subdirectory to run GitHub pages ...
+#
 # Open up the /docs directory of your repo from inside Visual Studio Code.
+#
+# cd docs
+#
+# For main repos that do NOT use the `docs` subdirectory to run GitHub pages ...
+#
+# Note. Open up the /root directory of your repo from inside Visual Studio Code for a Terminal prompt, as follows:
+#
+# Terminal: New Terminal
 #
 # Next, type the following command at the 'Integrated Terminal View' of Visual Studio Code:
 #
@@ -188,7 +220,11 @@ gem 'jekyll-docs', '3.9.0'
 #
 # jekyll serve --watch --baseurl "" --port 4001 -o
 #
-# Other switches can be added to trace a cache and the `bundle exec` prefix can be added to the `jekyll serve` command as above, as follows:
+# Other switches can be added to trace a cache ...
+# and the `bundle exec` prefix can be added to the `jekyll serve` command ...
+# as above, as follows:
+#
+# bundle exec jekyll serve --watch --trace --baseurl "" --port 4002 -o
 #
 # bundle exec jekyll serve --watch --trace --baseurl "" --port 4003 -o
 #
@@ -210,24 +246,35 @@ gem 'jekyll-docs', '3.9.0'
 gem 'rubyzip', '2.0.0'
 #
 # github-pages, 175 requires activesupport, 429
-gem 'activesupport', '6.0.3.1'
+# gem 'activesupport', '6.0.3.1'
+gem 'activesupport', '6.0.6.1'
 #
-gem 'github-pages-health-check', '1.16.1'
+gem 'github-pages-health-check', '1.17.9'
 #
-gem 'github-pages', '209'
-#
+gem 'github-pages', '228'
+# 
 # Note. The `github-markdown` dependency is no longer
 # designated at the online GitHub Pages dependency chart
 # C=> https://pages.github.com/versions/
 # gem 'github-markdown'
 #
-gem 'html-pipeline', '2.14.0'
+# gem 'i18n', '0.9.5'
+gem 'i18n', '< 2.0'
+# 
+# gem 'webrick', '1.7.0'
+gem 'webrick', '~> 1.7.0'
+# 
+# https://pages.github.com/versions/
+#
+# gem 'github-markdown'
+# 
+gem 'html-pipeline', '2.14.3'
 #
 gem 'jekyll-avatar', '0.7.0'
 #
 gem 'jekyll-coffeescript', '1.1.1'
 #
-gem 'jekyll-commonmark-ghpages', '0.1.6'
+gem 'jekyll-commonmark-ghpages', '0.4.0'
 #
 gem 'jekyll-default-layout', '0.1.4'
 #
@@ -236,6 +283,8 @@ gem 'jekyll-feed', '0.15.1'
 gem 'jekyll-gist', '1.5.0'
 #
 gem 'jekyll-github-metadata', '2.13.0'
+#
+gem 'jekyll-include-cache', '0.2.1'
 #
 gem 'jekyll-mentions', '1.6.0'
 #
@@ -249,18 +298,18 @@ gem 'jekyll-redirect-from', '0.16.0'
 #
 gem 'jekyll-relative-links', '0.6.1'
 #
-gem 'jekyll-remote-theme', '0.4.2'
+gem 'jekyll-remote-theme', '0.4.3'
 #
 gem 'jekyll-sass-converter', '1.5.2'
 #
-gem 'jekyll-seo-tag', '2.6.1'
+gem 'jekyll-seo-tag', '2.8.0'
 #
 gem 'jekyll-sitemap', '1.4.0'
 #
 gem 'jekyll-swiss', '1.0.0'
 #
-# Uncomment for all satellite repos
-gem 'jekyll-theme-cayman', '0.1.1'
+# Uncomment this in for all satellite repos (this is a "satellite" repo)
+gem 'jekyll-theme-cayman', '0.2.0'
 #
 gem 'jekyll-titles-from-headings', '0.5.3'
 #
@@ -268,16 +317,18 @@ gem 'jemoji', '0.12.0'
 #
 gem 'kramdown-parser-gfm', '1.1.0'
 #
-gem 'kramdown', '2.3.0'
+# gem "kramdown", ">= 2.3.1"
+gem 'kramdown', '2.3.2'
 #
-gem 'liquid', '4.0.3'
+gem 'liquid', '4.0.4'
 #
 gem 'minima', '2.5.1'
 #
-gem 'nokogiri', '1.10.10'
+gem 'nokogiri', '>= 1.15.2'
 #
-gem 'rouge', '3.23.0'
-#
+# gem 'rouge', '3.23.0'
+gem 'rouge', '3.26.0'
+# 
 gem 'safe_yaml', '1.0.5'
 #
 gem 'sass', '3.7.4'
@@ -285,7 +336,7 @@ gem 'sass', '3.7.4'
 # The following gems are not listed at: https://pages.github.com/versions/
 #
 # gem 'rubyzip', '2.0.0'
-gem 'listen', '3.1.5'
+# gem 'listen', '3.1.5'
 #
 # If you have any other Jekyll plugins, put them here ...
 # group: 'jekyll_plugins' do
