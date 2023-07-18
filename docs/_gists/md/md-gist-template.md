@@ -3,7 +3,7 @@ title: Place Title of Page Here
 layout: default
 excerpt: Place the introducing line of text ie.) the 'tagline' here ...
 hint: Place the intro paragraph ie.) the 'hypothesis' here ...
-repo: Shell-Lessons-Project
+repo: Python-Lessons-Project
 ver_date: 11-26-19
 navigation_weight: 8
 categories: template
@@ -18,41 +18,7 @@ More to come ...
 
 ## Import Code
 
-```html
-<hgroup class='text-left'>
-    <h4>Strict Objects</h4>
-</hgroup>
-    <hr class='green-groove' />
-
-<p>
-    <span>Now, that works fine.</span>
-    <span>But, how will the code execute in Strict Mode?</span>
-    <span>One way to find out is to transfer our code to a (<a href="../js/scripts/strict-objects.js" title="Click To Review the Original Javascript file" target="_blank">.js</a>) page and invoke Strict Mode at the top of the program.</span>
-</p>
-
-<pre class='flex-box'>
-<span>Invoke Strict Mode ...</span>
-{% highlight html linenos %}
-//Strict Objects
-'use strict';
-{% endhighlight %}
-<span>Place at the top of program.</span>
-</pre>
-<hr class='green-groove' />
-
-<p>
-    <span>Let's try that.</span>
-</p>
-
-<p>
-    <span>Copy and paste the contents of the entire (<a href='../js/scripts/strict-objects.js' title='Click To Review the Original Javascript file' target='_blank'>.js</a>) file into the Firefox Web-console ...</span>
-    <span>Then, hit the <kbd>Enter</kbd> key.</span>
-</p>
-
-<pre class='flex-box'>
-    <span lang='es' title='Sp. for 'Finish''>Finito! <i class='icon-large icon-flower'></i></span>
-</pre>
-```
+More to come ...
 
 ## Last Subtitle
 
